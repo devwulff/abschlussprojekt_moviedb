@@ -21,23 +21,25 @@ const Trailer = () => {
         <div>
 
             <div>
-                <h3>Trailer:</h3>
+
                 {trailer.map((elt, i) => {
-                    if (elt.type === "Trailer" && elt.name === "Official Trailer") {
+                    if (elt.type === "Trailer" && elt.name === "Official Trailer" || elt.name === "Trailer") {
                         console.log(elt.key)
 
                         return (
-
-                            <iframe
-                                key={i}
-                                width="560"
-                                height="315"
-                                src={`https://www.youtube.com/embed/${elt.key}`}
-                                title="YouTube video player"
-                                frameBorder="0"
-                                allow="accelerometer; autoplay; encrypted-media; gyroscope;"
-                                allowFullScreen
-                            ></iframe>
+                            <div>
+                                <h3>Trailer</h3>
+                                <iframe
+                                    key={i}
+                                    width="560"
+                                    height="315"
+                                    src={`https://www.youtube.com/embed/${elt.key}`}
+                                    title="YouTube video player"
+                                    frameBorder="0"
+                                    allow="accelerometer; autoplay; encrypted-media; gyroscope;"
+                                    allowFullScreen
+                                ></iframe>
+                            </div>
                         )
                     }
                 }

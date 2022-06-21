@@ -25,7 +25,7 @@ const MovieList = () => {
                         key={i}
                         id={elt.id}
                         title={elt.title}
-                        year={elt.release_date}
+                        year={elt.release_date.slice(0, 4)}
                         img={elt.poster_path}
                     />
                 );
