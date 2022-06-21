@@ -5,10 +5,11 @@ const MovieItem = (props) => {
 
 
     return (<div>
-        <img src={`https://image.tmdb.org/t/p/w500${props.img}`} alt="Bild des Films" />
-        <h2>{props.title}</h2>
-        <p>{props.year}</p>
-        <Link to={`/details/${props.id}`}>Detailseite</Link>
+        <Link to={`/details/${props.id}`}>
+            <img src={`https://image.tmdb.org/t/p/w500${props.img}`} alt="Bild des Films" />
+            <h2>{props.title}</h2>
+            <p>{props.year}</p>
+        </Link>
     </div>);
 }
 

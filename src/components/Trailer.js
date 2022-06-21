@@ -27,10 +27,9 @@ const Trailer = () => {
                         console.log(elt.key)
 
                         return (
-                            <div>
+                            <div key={i}>
                                 <h3>Trailer</h3>
                                 <iframe
-                                    key={i}
                                     width="560"
                                     height="315"
                                     src={`https://www.youtube.com/embed/${elt.key}`}

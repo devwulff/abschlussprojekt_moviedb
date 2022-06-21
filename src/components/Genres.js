@@ -15,8 +15,8 @@ const Genres = () => {
     console.log(genres)
     return (<div>
         {genres.map((elt, i) =>
-            <ul>
-                <li key={i}>{elt.name}</li>
+            <ul key={i}>
+                <li >{elt.name}</li>
             </ul>
 
         )}
